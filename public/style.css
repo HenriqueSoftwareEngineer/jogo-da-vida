@@ -1,0 +1,41 @@
+/* Estilos da Interface do Jogo da Vida  */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+#grid {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    grid-template-rows: repeat(10, 30px);
+    gap: 2px;
+}
+.cell {
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+.alive {
+    background-color: #4caf50;
+}
+.dead {
+    background-color: #fff;
+}
+button {
+    margin-top: 20px;
+}
+
+/*Abaixo uma media querie para telas maiores*/
+@media (min-width: 768px) {
+    body{
+        font-size: 20px;
+        }
+        }
+        
